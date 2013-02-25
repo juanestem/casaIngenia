@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* ________________________________ ESTILOS GENERALES _________________________________*/
+@font-face {
+    font-family: 'RalewayThin';
+    src: url('../fonts/raleway_thin-webfont.eot');
+    src: url('../fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway_thin-webfont.woff') format('woff'),
+         url('../fonts/raleway_thin-webfont.ttf') format('truetype'),
+         url('../fonts/raleway_thin-webfont.svg#RalewayThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	font-family: 'RalewayThin';
+	font-weight:100%;
+	margin:0;
+	color:#999;
+	background: #f9f9f9;
+	overflow: scroll;
+    overflow-x: hidden;
+}
+/* ________________________________ FIN ESTILOS GENERALES _________________________________*/
+header{
+	width:99%;
+	padding:0.625em 0.625em 0 0.625em ;
+	background-color:#1C1B1B;
+	margin:0 0 0 0;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;	
+}
+#form_01{
+	float:left;
+	padding:0.188em 0 0 0;
+}
+#form_01 select {
+	border:solid 1px #444;
+	background-color:#1D1B1C;
+	font-family: 'RalewayThin';
+	color:#999;
+	font-size:0.875em;
+	padding:0 0.313em 0 0.313em;
+	margin:0;	
+}
+#menu_img {
+	float:left;
+}
+#menu_img ul {
+	list-style:none;
+	display:inline;
+	margin:0 0 0 0.625em;
+	padding:0;
+}
+#menu_img ul li{
+	display:inline;
+}
+#menu_img ul li a{
+	opacity:1;
+  	filter:alpha(opacity=100);
+}
+#menu_img ul li a:hover{
+	opacity:0.4;
+  	filter:alpha(opacity=50);
+}
+#menu_redes{
+	float:right;
+	clear:none;
+}
+#menu_redes img{
+	max_width:20px;
+	height:auto;
+}
+#menu_redes ul {
+	list-style:none;
+	display:inline;
+	margin:0 0 0 0.625em;
+	padding:0;
+}
+#menu_redes ul li{
+	display:inline;
+}
+#menu_redes ul li a{
+	opacity:1;
+  	filter:alpha(opacity=100);
+}
+#menu_redes ul li a:hover{
+	opacity:0.5;
+  	filter:alpha(opacity=50);
+}
+#logo{
+	position: absolute;
+	top:0;
+	left:50%;
+	z-index:1100;
+}
+.clear{
+	clear:both;
+	padding:-0.313em ;
+	margin:0;	
+	width:0; height:0;
+}
+#main_contener{
+	width:auto;
+	overflow:auto;
+	margin:0;
+	padding:0;
+}
+#main_contener{
+	width:auto;
+	overflow:auto;
+	margin:0;
+	padding:0;
+}
+#main_contener ul{
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+}
+#main_contener ul li{
+	float:left;
+}
+#main_contener ul li img{
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+#main_contener ul li img:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+footer{
+	width:100%;
+	height:auto;
+	padding:0.625em;
+	background-color:#1C1B1B;
+	margin:0 0 0 0;
+	font-size:0.625em;
+	z-index:990;
+	bottom:0;
+	left:0;
+	position:fixed;
+
+}
+footer a{
+	color:#999;
+	text-decoration:none;
+}
+footer a:hover{
+	color:#666;
+	text-decoration:none;
+}
+#div_footer_lef{
+	display:inline-block;
+	width:50%;
+	}
+#div_footer_right{
+	width:49%;
+	display:inline-block;
+	text-align:right;
+	}
+	
+/* ________________________________ ESTILOS DETALLE FOTO __________________________________*/
+
+#detalle_foto{
+	width:100%;
+	max-width:980px;
+	position:fixed;
+	z-index:1000;
+	top:48px;
+	left:0;
+}
+#detalle_foto_tit{
+	background-color:#EEE;
+	border:#EEE solid 1px;
+}
+#detalle_foto_tit h1{
+	color:#FF6600;
+	font-size:1.875em;
+	line-height:0.875em;
+	padding:10px 0 0 10px;
+	margin:0;
+}
+#detalle_foto_tit h2{
+	color:#444;
+	font-size:0.875em;
+	padding:0 0 0 10px;
+	margin:0;
+}
+#detalle_foto_tit span{
+	position: relative;
+	top:0;
+	right:0;
+	z-index:1001;
+	float:right;
+	margin:0.313em 0;
+}
+#detalle_foto_tit span a{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#1C1B1B;
+	padding:0.313em;
+}
+#detalle_foto_tit span a:hover{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#FF6600;
+	padding:0.313em;
+}
+#detalle_foto_imgs{
+	max-width:725px;
+	max-height:940px;
+	width:75%;
+	height:80%;
+	float:left;
+	padding:0.313em;
+	overflow:auto;
+	background-color:#FFF;
+}
+#detalle_foto_imgs ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#detalle_foto_imgs ul li{
+	padding:0.313em;
+}
+#detalle_foto_imgs ul li img{
+	width:100%;
+	max-width:690px;
+}
+#detalle_foto_proyecto{
+	max-width:225px;
+	width:25%; height:940px;
+	float:right;
+	padding:0.313em 0.313em 0.313em 0.938em;
+	background-color:#4C4C4C;
+	color:#EDEDED;
+}
+#detalle_foto_proyecto h1{
+	font-size:1.125em;
+	font-weight:bold;
+	color:#FF6600;
+}
+
+#detalle_foto_proyecto p{
+	font-size:0.688em;
+}
+#detalle_foto_relacionados{
+	clear:both;
+	width:100%;
+	border-top:1px solid #CCCCCC;
+	background-color:#EEE;
+}
+#detalle_foto_relacionados h1{
+	color:#FF6600;
+	margin:0;
+	padding:0.313em;
+	font-size:1.125em;
+}
+#detalle_foto_relacionados ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#detalle_foto_relacionados ul li{
+	float:left;
+	margin:0 0.313em;
+}
+#detalle_foto_relacionados ul li img{
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+#detalle_foto_relacionados ul li img:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+/* ________________________________ ESTILOS GENERALES IPAD_________________________________*/
+
+@media screen and (max-width: 700px){
+	header{
+	height:50px;
+	}
+	#form_01{
+		display: none;
+	}
+	#form_01 select {
+		font-size:1.442em;
+	}	
+	#logo{
+		left:0;
+	}
+	#logo img{
+		max-width:50px;
+		max-height:50px;
+	}
+	#menu_img {
+		width:100%;
+		clear:both;
+		text-align:right;
+	}
+	#menu_img img{
+		min-width:30px;
+		min-height:30px;
+		text-align:center;
+	}
+	#menu_redes{
+		width:100%;background-color: #1C1B1B;
+		position: fixed;
+		text-align:center;
+		bottom: 0;
+		left: 0;
+		z-index: 2900;
+	}
+	#menu_redes img{
+		min-width:30px;
+		min-height:30px;
+		text-align:center;
+	}
+	.img_t01{
+		min-width:233px;
+		min-height:190px;
+		width:50%;
+		height:auto;
+	}
+	.img_t02{
+		min-width:460px;
+		min-height:190px;
+		width:100%;
+		height:auto;
+	}
+	.img_t03{
+		min-width:233px;
+		min-height:380px;
+		width:50%;
+		height:auto;
+	}
+	.img_t04{
+		min-width:460px;
+		min-height:380px;
+		width:100%;
+		height:auto;
+	}
+	#detalle_foto{
+		position:absolute;
+	}
+	#detalle_foto_proyecto{
+		float:left;
+		width:100%;
+		max-width:700px;
+		height:auto;
+	}
+	#detalle_foto_imgs{
+		width:100%;
+		height:auto;
+		overflow: visible;
+	}
+	#detalle_foto_relacionados{
+		display:none;
+	}
+	footer{
+		display:none;
+	}
+}
+
+/* ________________________________ ESTILOS GENERALES IPHONE_________________________________*/
+
+
+@media screen and (max-width: 480px){
+	.img_t01{
+		min-width:190px;
+		min-height:155px;
+		width:50%;
+		height:auto;
+	}
+	.img_t02{
+		min-width:380px;
+		min-height:155px;
+		width:100%;
+		height:auto;
+	}
+	.img_t03{
+		min-width:190px;
+		min-height:210px;
+		width:50%;
+		height:auto;
+	}
+	.img_t04{
+		min-width:380px;
+		min-height:210px;
+		width:100%;
+		height:auto;
+	}
+	
+}
